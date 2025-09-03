@@ -1,0 +1,276 @@
+# Zone Configuration
+zones:
+  # Raw Material Areas
+  - zone_id: "RAW_MAT_01"
+    name: "Raw Material Storage A"
+    category: "RAW_MATERIAL"
+    type: "OPERATIONAL"
+    max_speed_mps: 1.5
+    max_agvs: 3
+    priority: 7
+    vertices:
+      - [10, 10]
+      - [40, 10]
+      - [40, 30]
+      - [10, 30]
+    rules:
+      - type: "speed_limit"
+        value: 1.5
+      - type: "one_way"
+        direction: "north"
+  
+  - zone_id: "RAW_MAT_02"
+    name: "Raw Material Storage B"
+    category: "RAW_MATERIAL"
+    type: "OPERATIONAL"
+    max_speed_mps: 1.5
+    max_agvs: 3
+    priority: 7
+    vertices:
+      - [10, 40]
+      - [40, 40]
+      - [40, 60]
+      - [10, 60]
+      
+  # Production Areas
+  - zone_id: "PROD_CELL_01"
+    name: "Production Cell 1"
+    category: "PRODUCTION"
+    type: "OPERATIONAL"
+    max_speed_mps: 1.0
+    max_agvs: 2
+    priority: 9
+    vertices:
+      - [50, 10]
+      - [80, 10]
+      - [80, 40]
+      - [50, 40]
+    rules:
+      - type: "no_idle"
+        max_idle_seconds: 60
+      
+  - zone_id: "PROD_CELL_02"
+    name: "Production Cell 2"
+    category: "PRODUCTION"
+    type: "OPERATIONAL"
+    max_speed_mps: 1.0
+    max_agvs: 2
+    priority: 9
+    vertices:
+      - [50, 50]
+      - [80, 50]
+      - [80, 80]
+      - [50, 80]
+      
+  # Assembly Areas
+  - zone_id: "ASSEMBLY_01"
+    name: "Assembly Line 1"
+    category: "ASSEMBLY"
+    type: "OPERATIONAL"
+    max_speed_mps: 0.8
+    max_agvs: 4
+    priority: 10
+    vertices:
+      - [90, 10]
+      - [140, 10]
+      - [140, 30]
+      - [90, 30]
+      
+  # Staging Areas
+  - zone_id: "STAGING_01"
+    name: "Staging Area 1"
+    category: "STAGING"
+    type: "STAGING"
+    max_speed_mps: 2.0
+    max_agvs: 5
+    priority: 5
+    vertices:
+      - [90, 40]
+      - [120, 40]
+      - [120, 60]
+      - [90, 60]
+      
+  # Charging Stations
+  - zone_id: "CHARGING_01"
+    name: "Charging Station A"
+    category: "MAINTENANCE"
+    type: "CHARGING"
+    max_speed_mps: 0.5
+    max_agvs: 4
+    priority: 3
+    vertices:
+      - [150, 10]
+      - [170, 10]
+      - [170, 20]
+      - [150, 20]
+    rules:
+      - type: "reserved"
+        reservation_required: true
+      
+  - zone_id: "CHARGING_02"
+    name: "Charging Station B"
+    category: "MAINTENANCE"
+    type: "CHARGING"
+    max_speed_mps: 0.5
+    max_agvs: 4
+    priority: 3
+    vertices:
+      - [150, 30]
+      - [170, 30]
+      - [170, 40]
+      - [150, 40]
+      
+  # Maintenance Area
+  - zone_id: "MAINT_01"
+    name: "Maintenance Bay"
+    category: "MAINTENANCE"
+    type: "MAINTENANCE"
+    max_speed_mps: 0.5
+    max_agvs: 2
+    priority: 2
+    vertices:
+      - [150, 50]
+      - [180, 50]
+      - [180, 70]
+      - [150, 70]
+    rules:
+      - type: "authorized_only"
+      
+  # Restricted Areas
+  - zone_id: "RESTRICTED_01"
+    name: "Hazardous Material Storage"
+    category: "RESTRICTED"
+    type: "RESTRICTED"
+    max_speed_mps: 0.0
+    max_agvs: 0
+    priority: 1
+    vertices:
+      - [160, 80]
+      - [190, 80]
+      - [190, 100]
+      - [160, 100]
+    rules:
+      - type: "no_entry"
+      - type: "alarm_on_entry"
+      
+  # Aisles/Corridors
+  - zone_id: "AISLE_MAIN"
+    name: "Main Aisle"
+    category: "TRANSIT"
+    type: "OPERATIONAL"
+    max_speed_mps: 2.5
+    max_agvs: 10
+    priority: 6
+    vertices:
+      - [40, 70]
+      - [150, 70]
+      - [150, 90]
+      - [40, 90]
+    rules:
+      - type: "two_way"
+      - type: "right_side_traffic"
+      
+  # Loading Docks
+  - zone_id: "DOCK_01"
+    name: "Loading Dock 1"
+    category: "LOGISTICS"
+    type: "OPERATIONAL"
+    max_speed_mps: 1.0
+    max_agvs: 2
+    priority: 8
+    vertices:
+      - [10, 100]
+      - [30, 100]
+      - [30, 130]
+      - [10, 130]
+    rules:
+      - type: "queue_management"
+      
+  - zone_id: "DOCK_02"
+    name: "Loading Dock 2"
+    category: "LOGISTICS"
+    type: "OPERATIONAL"
+    max_speed_mps: 1.0
+    max_agvs: 2
+    priority: 8
+    vertices:
+      - [40, 100]
+      - [60, 100]
+      - [60, 130]
+      - [40, 130]
+
+# Zone Categories Configuration
+categories:
+  RAW_MATERIAL:
+    color: "#2E7D32"
+    icon: "warehouse"
+    description: "Raw material storage areas"
+    
+  PRODUCTION:
+    color: "#1565C0"
+    icon: "factory"
+    description: "Production cells and manufacturing areas"
+    
+  ASSEMBLY:
+    color: "#6A1B9A"
+    icon: "build"
+    description: "Assembly lines and workstations"
+    
+  STAGING:
+    color: "#F57C00"
+    icon: "inventory"
+    description: "Temporary storage and staging areas"
+    
+  MAINTENANCE:
+    color: "#C62828"
+    icon: "engineering"
+    description: "Maintenance and charging areas"
+    
+  RESTRICTED:
+    color: "#B71C1C"
+    icon: "warning"
+    description: "Restricted access areas"
+    
+  TRANSIT:
+    color: "#546E7A"
+    icon: "route"
+    description: "Aisles and transit corridors"
+    
+  LOGISTICS:
+    color: "#00838F"
+    icon: "local_shipping"
+    description: "Loading docks and shipping areas"
+
+# Zone Rules Configuration
+rules:
+  speed_limit:
+    enforcement: "automatic"
+    violation_action: "reduce_speed"
+    
+  no_idle:
+    enforcement: "monitoring"
+    violation_action: "alert"
+    
+  one_way:
+    enforcement: "automatic"
+    violation_action: "stop"
+    
+  two_way:
+    enforcement: "guidance"
+    violation_action: "none"
+    
+  no_entry:
+    enforcement: "automatic"
+    violation_action: "emergency_stop"
+    
+  reserved:
+    enforcement: "scheduling"
+    violation_action: "redirect"
+    
+  authorized_only:
+    enforcement: "access_control"
+    violation_action: "alert"
+    
+  queue_management:
+    enforcement: "automatic"
+    violation_action: "wait"

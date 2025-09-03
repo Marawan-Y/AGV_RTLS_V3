@@ -1,0 +1,101 @@
+# Logging Configuration
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  default:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+  
+  detailed:
+    format: '%(asctime)s - %(name)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(funcName)s() - %(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+  
+  json:
+    class: 'pythonjsonlogger.jsonlogger.JsonFormatter'
+    format: '%(asctime)s %(name)s %(levelname)s %(message)s %(pathname)s %(lineno)d'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: default
+    stream: ext://sys.stdout
+  
+  file:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: detailed
+    filename: logs/agv_rtls.log
+    maxBytes: 10485760  # 10MB
+    backupCount: 10
+    encoding: utf8
+  
+  error_file:
+    class: logging.handlers.RotatingFileHandler
+    level: ERROR
+    formatter: detailed
+    filename: logs/errors.log
+    maxBytes: 10485760  # 10MB
+    backupCount: 5
+    encoding: utf8
+  
+  mqtt_file:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: default
+    filename: logs/mqtt.log
+    maxBytes: 5242880  # 5MB
+    backupCount: 5
+  
+  database_file:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: default
+    filename: logs/database.log
+    maxBytes: 5242880  # 5MB
+    backupCount: 5
+  
+  performance_file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: INFO
+    formatter: json
+    filename: logs/performance.json
+    when: midnight
+    interval: 1
+    backupCount: 30
+
+loggers:
+  src.ingestion:
+    level: DEBUG
+    handlers: [mqtt_file, console]
+    propagate: false
+  
+  src.core.database:
+    level: DEBUG
+    handlers: [database_file, console]
+    propagate: false
+  
+  src.analytics:
+    level: INFO
+    handlers: [file, console]
+    propagate: false
+  
+  src.api:
+    level: INFO
+    handlers: [file, console]
+    propagate: false
+  
+  src.dashboard:
+    level: INFO
+    handlers: [file, console]
+    propagate: false
+  
+  performance:
+    level: INFO
+    handlers: [performance_file]
+    propagate: false
+
+root:
+  level: INFO
+  handlers: [console, file, error_file]

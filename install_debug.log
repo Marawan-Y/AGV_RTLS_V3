@@ -1,0 +1,10 @@
++ set -e
++ echo =========================================
+=========================================
++ echo 'AGV RTLS Dashboard - Installation Script'
+AGV RTLS Dashboard - Installation Script
++ echo =========================================
+=========================================
+++ python3 --version
+++ grep -Po '(?<=Python )\d+\.\d+'
++ python_version=

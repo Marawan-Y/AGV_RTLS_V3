@@ -1,0 +1,11 @@
+# Ignore config files
+.config/
+*.env
+*.key
+*.pem
+
+# Ignore database files
+*.sqlite3
+__pycache__/
+
+/venv/

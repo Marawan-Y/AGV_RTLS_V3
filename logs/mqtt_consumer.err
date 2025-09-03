@@ -1,0 +1,125 @@
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\ingestion\__init__.py", line 4, in <module>
+    from .mqtt_consumer import MQTTConsumer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\ingestion\mqtt_consumer.py", line 19, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-03 13:53:47.562[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+Traceback (most recent call last):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\ingestion\__init__.py", line 4, in <module>
+    from .mqtt_consumer import MQTTConsumer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\ingestion\mqtt_consumer.py", line 23, in <module>
+    from src.analytics.anomaly_detector import AnomalyDetector
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\__init__.py", line 3, in <module>
+    from .trajectory_analyzer import TrajectoryAnalyzer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\trajectory_analyzer.py", line 11, in <module>
+    import networkx as nx
+ModuleNotFoundError: No module named 'networkx'
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-03 13:55:05.011[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+Traceback (most recent call last):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\ingestion\__init__.py", line 4, in <module>
+    from .mqtt_consumer import MQTTConsumer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\ingestion\mqtt_consumer.py", line 23, in <module>
+    from src.analytics.anomaly_detector import AnomalyDetector
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\__init__.py", line 4, in <module>
+    from .heatmap_generator import HeatmapGenerator
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\heatmap_generator.py", line 10, in <module>
+    import datashader as ds
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\__init__.py", line 14, in <module>
+    from . import data_libraries                             # noqa (API import)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\data_libraries\__init__.py", line 5, in <module>
+    from . import dask    # noqa (API import)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\data_libraries\dask.py", line 55, in <module>
+    bypixel.pipeline.register(dd.core.DataFrame)(dask_pipeline)
+AttributeError: module 'dask.dataframe.core' has no attribute 'DataFrame'
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-03 14:14:43.719[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-03 14:14:55.495[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-03 14:15:00.925[0m | [31m[1mERROR   [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m78[0m - [31m[1mFailed to load zones: 'assets\zones.geojson' not recognized as being in a supported file format.; It might help to specify the correct driver explicitly by prefixing the file path with '<DRIVER>:', e.g. 'CSV:path'.[0m
+[32m2025-09-03 14:15:00.928[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-03 14:15:00.936[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-03 14:15:00.936[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-03 14:16:00.937[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:17:00.938[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:18:00.949[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:19:00.962[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:19:34.216[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-03 14:19:34.216[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-03 14:19:34.217[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-03 14:19:34.217[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-03 14:23:10.813[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-03 14:23:23.888[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-03 14:23:34.363[0m | [31m[1mERROR   [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m78[0m - [31m[1mFailed to load zones: 'assets\zones.geojson' not recognized as being in a supported file format.; It might help to specify the correct driver explicitly by prefixing the file path with '<DRIVER>:', e.g. 'CSV:path'.[0m
+[32m2025-09-03 14:23:34.366[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-03 14:23:34.391[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-03 14:23:34.391[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-03 14:24:34.396[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:25:34.410[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:26:34.415[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:27:34.420[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:28:34.436[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:29:34.443[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:30:34.451[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:31:34.463[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:32:34.467[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 14:33:03.965[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-03 14:33:03.966[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-03 14:33:03.967[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-03 14:33:03.968[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m

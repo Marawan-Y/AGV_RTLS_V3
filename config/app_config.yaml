@@ -1,0 +1,102 @@
+# Application Configuration
+app:
+  name: "AGV RTLS Dashboard"
+  version: "2.0.0"
+  environment: "production"  # development, staging, production
+  debug: false
+  timezone: "UTC"
+  
+server:
+  host: "0.0.0.0"
+  streamlit_port: 8501
+  api_port: 8000
+  websocket_port: 8080
+  
+database:
+  pool_size: 20
+  max_overflow: 30
+  pool_timeout: 30
+  pool_recycle: 3600
+  echo_sql: false
+  batch_size: 1000
+  
+mqtt:
+  reconnect_delay: 5
+  max_reconnect_attempts: 10
+  keepalive: 30
+  qos: 1
+  clean_session: false
+  buffer_size: 10000
+  flush_interval: 1  # seconds
+  
+rtls:
+  sample_rate_hz: 3
+  max_agv_count: 100
+  position_timeout: 10  # seconds
+  quality_threshold: 0.5
+  
+plant:
+  coordinate_system: "LOCAL"
+  bounds:
+    xmin: 0
+    xmax: 200
+    ymin: 0
+    ymax: 150
+  grid_size: 1  # meters
+  
+analytics:
+  trajectory_downsample: 10  # Keep every 10th point for long trajectories
+  heatmap_bins: 150
+  zone_transition_threshold: 2  # meters
+  anomaly_detection:
+    enabled: true
+    speed_threshold: 5.0  # m/s
+    acceleration_threshold: 3.0  # m/s²
+    quality_threshold: 0.3
+    idle_threshold: 300  # seconds
+    
+performance:
+  cache_ttl: 300  # seconds
+  query_timeout: 30  # seconds
+  max_trajectory_points: 10000
+  aggregation_interval: 3600  # seconds (1 hour)
+  
+monitoring:
+  metrics_port: 9090
+  health_check_interval: 60
+  log_level: "INFO"
+  enable_profiling: false
+  
+alerts:
+  email:
+    enabled: false
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    from_address: "agv-alerts@company.com"
+    recipients:
+      - "supervisor@company.com"
+  slack:
+    enabled: false
+    webhook_url: ""
+  thresholds:
+    battery_low: 20  # percent
+    connection_lost: 30  # seconds
+    zone_violation: true
+    collision_risk_distance: 2  # meters
+    
+ui:
+  theme: "light"
+  refresh_rate: 3  # seconds
+  max_trajectories_displayed: 10
+  trajectory_line_width: 2
+  marker_size: 10
+  heatmap_opacity: 0.5
+  zone_opacity: 0.2
+  enable_animations: true
+  
+data_retention:
+  raw_data_days: 90
+  aggregated_data_days: 365
+  archive_enabled: true
+  archive_path: "/backup/agv_archive"
+  cleanup_schedule: "02:00"  # Run at 2 AM daily

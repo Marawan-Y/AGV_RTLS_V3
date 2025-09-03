@@ -1,0 +1,1580 @@
+2025-09-03 13:52:08.267 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 13, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:52:24.378 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 9, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:52:25.678 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\02_fleet_analytics.py", line 10, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:52:26.835 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\03_live_monitor.py", line 12, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:52:27.276 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\04_zone_analysis.py", line 11, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:52:27.857 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\05_performance_kpi.py", line 11, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:52:28.434 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 13, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:53:14.376 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 13, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:53:16.172 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 13, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:53:17.356 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 13, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2025-09-03 13:54:03.985 | INFO     | src.core.database:_init_checks:95 - Connected to MySQL 8.0.43
+2025-09-03 13:54:04.897 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 14, in <module>
+    from src.analytics.trajectory_analyzer import TrajectoryAnalyzer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\__init__.py", line 3, in <module>
+    from .trajectory_analyzer import TrajectoryAnalyzer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\trajectory_analyzer.py", line 11, in <module>
+    import networkx as nx
+ModuleNotFoundError: No module named 'networkx'
+2025-09-03 13:55:15.583 | INFO     | src.core.database:_init_checks:95 - Connected to MySQL 8.0.43
+2025-09-03 13:55:18.261 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 14, in <module>
+    from src.analytics.trajectory_analyzer import TrajectoryAnalyzer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\__init__.py", line 4, in <module>
+    from .heatmap_generator import HeatmapGenerator
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\heatmap_generator.py", line 10, in <module>
+    import datashader as ds
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\__init__.py", line 14, in <module>
+    from . import data_libraries                             # noqa (API import)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\data_libraries\__init__.py", line 5, in <module>
+    from . import dask    # noqa (API import)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\data_libraries\dask.py", line 55, in <module>
+    bypixel.pipeline.register(dd.core.DataFrame)(dask_pipeline)
+AttributeError: module 'dask.dataframe.core' has no attribute 'DataFrame'
+2025-09-03 14:14:48.369 | INFO     | src.core.database:_init_checks:95 - Connected to MySQL 8.0.43
+2025-09-03 14:14:56.845 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 51, in <module>
+    class AGVDashboard:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 62, in AGVDashboard
+    def _load_plant_map(self) -> Optional[Image.Image]:
+NameError: name 'Optional' is not defined
+2025-09-03 14:16:45.957 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 689, in <module>
+    main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 685, in main
+    dashboard = AGVDashboard()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 62, in __init__
+    self.plant_map = self._load_plant_map()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 69, in _load_plant_map
+    return Image.open(map_path)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\PIL\Image.py", line 3580, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'assets\\plant_map.png'
+2025-09-03 14:17:11.267 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 689, in <module>
+    main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 686, in main
+    dashboard.run()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 672, in run
+    self.render_header_metrics()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 164, in render_header_metrics
+    stats = self.performance_metrics.get_fleet_stats()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 39, in get_fleet_stats
+    fleet_status = db_manager.query_dataframe("""
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+[SQL: 
+            SELECT 
+                r.agv_id,
+                r.status,
+                r.type,
+                r.total_distance_km,
+                r.total_runtime_hours,
+                COALESCE(p.speed_mps, 0) as current_speed,
+                COALESCE(p.battery_percent, 100) as battery
+            FROM agv_registry r
+            LEFT JOIN (
+                SELECT DISTINCT ON (agv_id) 
+                    agv_id, speed_mps, battery_percent
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL '1 minute'
+                ORDER BY agv_id, ts DESC
+            ) p ON r.agv_id = p.agv_id
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-03 14:17:47.231 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 12, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:19:28.564 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 13, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:19:59.195 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 15, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:20:01.312 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 15, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:20:02.793 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\02_fleet_analytics.py", line 14, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:20:03.333 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 15, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:20:04.285 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\02_fleet_analytics.py", line 14, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:20:05.054 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 15, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:20:11.969 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 15, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:23:11.712 | INFO     | src.core.database:_init_checks:95 - Connected to MySQL 8.0.43
+2025-09-03 14:23:25.294 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 689, in <module>
+    main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 686, in main
+    dashboard.run()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 672, in run
+    self.render_header_metrics()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 164, in render_header_metrics
+    stats = self.performance_metrics.get_fleet_stats()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 39, in get_fleet_stats
+    fleet_status = db_manager.query_dataframe("""
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+[SQL: 
+            SELECT 
+                r.agv_id,
+                r.status,
+                r.type,
+                r.total_distance_km,
+                r.total_runtime_hours,
+                COALESCE(p.speed_mps, 0) as current_speed,
+                COALESCE(p.battery_percent, 100) as battery
+            FROM agv_registry r
+            LEFT JOIN (
+                SELECT DISTINCT ON (agv_id) 
+                    agv_id, speed_mps, battery_percent
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL '1 minute'
+                ORDER BY agv_id, ts DESC
+            ) p ON r.agv_id = p.agv_id
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-03 14:27:13.793 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 15, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:28:20.098 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 15, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:28:23.309 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\01_agv_tracker.py", line 15, in <module>
+    from src.dashboard.components.map_renderer import MapRenderer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 16, in <module>
+    class MapRenderer:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\components\map_renderer.py", line 330, in MapRenderer
+    timestamps: List[datetime]) -> go.Figure:
+NameError: name 'datetime' is not defined
+2025-09-03 14:28:32.768 | INFO     | src.core.zone_manager:load_zones:58 - Loaded 0 zones
+2025-09-03 14:28:55.974 | INFO     | src.core.zone_manager:load_zones:58 - Loaded 0 zones
+2025-09-03 14:28:56.000 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\02_fleet_analytics.py", line 556, in <module>
+    render_page()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\02_fleet_analytics.py", line 80, in render_page
+    fleet_stats = performance_metrics.get_fleet_stats(end_time - start_time)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 39, in get_fleet_stats
+    fleet_status = db_manager.query_dataframe("""
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+[SQL: 
+            SELECT 
+                r.agv_id,
+                r.status,
+                r.type,
+                r.total_distance_km,
+                r.total_runtime_hours,
+                COALESCE(p.speed_mps, 0) as current_speed,
+                COALESCE(p.battery_percent, 100) as battery
+            FROM agv_registry r
+            LEFT JOIN (
+                SELECT DISTINCT ON (agv_id) 
+                    agv_id, speed_mps, battery_percent
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL '1 minute'
+                ORDER BY agv_id, ts DESC
+            ) p ON r.agv_id = p.agv_id
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-03 14:28:59.440 | INFO     | src.core.zone_manager:load_zones:58 - Loaded 0 zones
+2025-09-03 14:29:06.444 | INFO     | src.core.zone_manager:load_zones:58 - Loaded 0 zones
+2025-09-03 14:29:06.463 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\04_zone_analysis.py", line 446, in <module>
+    render_page()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\04_zone_analysis.py", line 102, in render_page
+    zone_stats = zone_analytics.get_zone_statistics(start_time, end_time)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\zone_analytics.py", line 43, in get_zone_statistics
+    stats = db_manager.query_dataframe(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1412, in execute
+    distilled_parameters = _distill_params_20(parameters)
+  File "lib\\sqlalchemy\\cyextension\\util.pyx", line 32, in sqlalchemy.cyextension.util._distill_params_20
+  File "lib\\sqlalchemy\\cyextension\\util.pyx", line 23, in sqlalchemy.cyextension.util._check_item
+sqlalchemy.exc.ArgumentError: List argument must consist only of tuples or dictionaries
+2025-09-03 14:29:15.289 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\05_performance_kpi.py", line 502, in <module>
+    render_page()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\pages\05_performance_kpi.py", line 87, in render_page
+    kpis = performance_metrics.calculate_kpis(start_time, end_time)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 118, in calculate_kpis
+    efficiency = self._calculate_efficiency(start_time, end_time)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 145, in _calculate_efficiency
+    result = db_manager.query_dataframe("""
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1412, in execute
+    distilled_parameters = _distill_params_20(parameters)
+  File "lib\\sqlalchemy\\cyextension\\util.pyx", line 32, in sqlalchemy.cyextension.util._distill_params_20
+  File "lib\\sqlalchemy\\cyextension\\util.pyx", line 23, in sqlalchemy.cyextension.util._check_item
+sqlalchemy.exc.ArgumentError: List argument must consist only of tuples or dictionaries
+2025-09-03 14:29:18.428 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 689, in <module>
+    main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 686, in main
+    dashboard.run()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 672, in run
+    self.render_header_metrics()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 164, in render_header_metrics
+    stats = self.performance_metrics.get_fleet_stats()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 39, in get_fleet_stats
+    fleet_status = db_manager.query_dataframe("""
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+[SQL: 
+            SELECT 
+                r.agv_id,
+                r.status,
+                r.type,
+                r.total_distance_km,
+                r.total_runtime_hours,
+                COALESCE(p.speed_mps, 0) as current_speed,
+                COALESCE(p.battery_percent, 100) as battery
+            FROM agv_registry r
+            LEFT JOIN (
+                SELECT DISTINCT ON (agv_id) 
+                    agv_id, speed_mps, battery_percent
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL '1 minute'
+                ORDER BY agv_id, ts DESC
+            ) p ON r.agv_id = p.agv_id
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-03 14:33:09.613 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 689, in <module>
+    main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 686, in main
+    dashboard.run()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 672, in run
+    self.render_header_metrics()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 164, in render_header_metrics
+    stats = self.performance_metrics.get_fleet_stats()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 39, in get_fleet_stats
+    # - Replace Postgres DISTINCT ON with a max(ts) self-join
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+[SQL: 
+            SELECT 
+                r.agv_id,
+                r.status,
+                r.type,
+                r.total_distance_km,
+                r.total_runtime_hours,
+                COALESCE(p.speed_mps, 0) as current_speed,
+                COALESCE(p.battery_percent, 100) as battery
+            FROM agv_registry r
+            LEFT JOIN (
+                SELECT DISTINCT ON (agv_id) 
+                    agv_id, speed_mps, battery_percent
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL '1 minute'
+                ORDER BY agv_id, ts DESC
+            ) p ON r.agv_id = p.agv_id
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-03 14:33:11.679 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 689, in <module>
+    main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 686, in main
+    dashboard.run()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 672, in run
+    self.render_header_metrics()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 164, in render_header_metrics
+    stats = self.performance_metrics.get_fleet_stats()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 39, in get_fleet_stats
+    # - Replace Postgres DISTINCT ON with a max(ts) self-join
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+[SQL: 
+            SELECT 
+                r.agv_id,
+                r.status,
+                r.type,
+                r.total_distance_km,
+                r.total_runtime_hours,
+                COALESCE(p.speed_mps, 0) as current_speed,
+                COALESCE(p.battery_percent, 100) as battery
+            FROM agv_registry r
+            LEFT JOIN (
+                SELECT DISTINCT ON (agv_id) 
+                    agv_id, speed_mps, battery_percent
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL '1 minute'
+                ORDER BY agv_id, ts DESC
+            ) p ON r.agv_id = p.agv_id
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-03 14:37:40.109 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 689, in <module>
+    main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 686, in main
+    dashboard.run()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 672, in run
+    self.render_header_metrics()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 164, in render_header_metrics
+    stats = self.performance_metrics.get_fleet_stats()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 39, in get_fleet_stats
+    # - Replace Postgres DISTINCT ON with a max(ts) self-join
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+[SQL: 
+            SELECT 
+                r.agv_id,
+                r.status,
+                r.type,
+                r.total_distance_km,
+                r.total_runtime_hours,
+                COALESCE(p.speed_mps, 0) as current_speed,
+                COALESCE(p.battery_percent, 100) as battery
+            FROM agv_registry r
+            LEFT JOIN (
+                SELECT DISTINCT ON (agv_id) 
+                    agv_id, speed_mps, battery_percent
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL '1 minute'
+                ORDER BY agv_id, ts DESC
+            ) p ON r.agv_id = p.agv_id
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-03 14:37:42.099 Uncaught app exception
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 88, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 579, in code_to_exec
+    exec(code, module.__dict__)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 689, in <module>
+    main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 686, in main
+    dashboard.run()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 672, in run
+    self.render_header_metrics()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\dashboard\app.py", line 164, in render_header_metrics
+    stats = self.performance_metrics.get_fleet_stats()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\performance_metrics.py", line 39, in get_fleet_stats
+    # - Replace Postgres DISTINCT ON with a max(ts) self-join
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 173, in query_dataframe
+    return pd.read_sql(text(query), conn, params=params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 736, in read_sql
+    return pandas_sql.read_query(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1848, in read_query
+    result = self.execute(sql, params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pandas\io\sql.py", line 1672, in execute
+    return self.con.execute(sql, *args)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON (agv_id) \n                    agv_id, speed_mps, battery_percent\n            ' at line 11")
+[SQL: 
+            SELECT 
+                r.agv_id,
+                r.status,
+                r.type,
+                r.total_distance_km,
+                r.total_runtime_hours,
+                COALESCE(p.speed_mps, 0) as current_speed,
+                COALESCE(p.battery_percent, 100) as battery
+            FROM agv_registry r
+            LEFT JOIN (
+                SELECT DISTINCT ON (agv_id) 
+                    agv_id, speed_mps, battery_percent
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL '1 minute'
+                ORDER BY agv_id, ts DESC
+            ) p ON r.agv_id = p.agv_id
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)

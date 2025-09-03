@@ -1,0 +1,306 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\20030497\\Desktop\\AGV RTLS\\AGV_RTLS_V3']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [28224] using StatReload
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 335, in connection
+    con = self._idle_cache.pop(0)
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 76, in _serve
+    config.load()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\api\fastapi_app.py", line 18, in <module>
+    from src.core.database import db_manager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\__init__.py", line 3, in <module>
+    from .database import db_manager, DatabaseManager
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 267, in <module>
+    db_manager = DatabaseManager()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 27, in __init__
+    self.sync_pool = self._create_sync_pool()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\core\database.py", line 48, in _create_sync_pool
+    return PooledDB(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in __init__
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 282, in <listcomp>
+    idle = [self.dedicated_connection() for i in range(mincached)]
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 346, in dedicated_connection
+    return self.connection(False)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 337, in connection
+    con = self.steady_connection()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\pooled_db.py", line 288, in steady_connection
+    return connect(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 138, in connect
+    return SteadyDBConnection(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 197, in __init__
+    self._store(self._create())
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dbutils\steady_db.py", line 215, in _create
+    con = self._creator(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 267, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pymysql\_auth.py", line 144, in sha2_rsa_encrypt
+    raise RuntimeError(
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+INFO:     Will watch for changes in these directories: ['C:\\Users\\20030497\\Desktop\\AGV RTLS\\AGV_RTLS_V3']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [12264] using StatReload
+[32m2025-09-03 13:53:47.913[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 76, in _serve
+    config.load()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\importer.py", line 22, in import_from_string
+    raise exc from None
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\api\fastapi_app.py", line 20, in <module>
+    from src.analytics.performance_metrics import PerformanceMetrics
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\__init__.py", line 3, in <module>
+    from .trajectory_analyzer import TrajectoryAnalyzer
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\trajectory_analyzer.py", line 11, in <module>
+    import networkx as nx
+ModuleNotFoundError: No module named 'networkx'
+INFO:     Will watch for changes in these directories: ['C:\\Users\\20030497\\Desktop\\AGV RTLS\\AGV_RTLS_V3']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [10748] using StatReload
+[32m2025-09-03 13:55:06.035[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 76, in _serve
+    config.load()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\api\fastapi_app.py", line 20, in <module>
+    from src.analytics.performance_metrics import PerformanceMetrics
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\__init__.py", line 4, in <module>
+    from .heatmap_generator import HeatmapGenerator
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\heatmap_generator.py", line 10, in <module>
+    import datashader as ds
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\__init__.py", line 14, in <module>
+    from . import data_libraries                             # noqa (API import)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\data_libraries\__init__.py", line 5, in <module>
+    from . import dask    # noqa (API import)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\data_libraries\dask.py", line 55, in <module>
+    bypixel.pipeline.register(dd.core.DataFrame)(dask_pipeline)
+AttributeError: module 'dask.dataframe.core' has no attribute 'DataFrame'
+WARNING:  StatReload detected changes in 'venv\Lib\site-packages\zipp\glob.py'. Reloading...
+Traceback (most recent call last):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\click\core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\click\core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\click\core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\click\core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\main.py", line 412, in main
+    run(
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\main.py", line 574, in run
+    ChangeReload(config, target=server.run, sockets=[sock]).run()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\supervisors\basereload.py", line 52, in run
+    for changes in self:
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\supervisors\basereload.py", line 71, in __next__
+    return self.should_restart()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\supervisors\statreload.py", line 31, in should_restart
+    for file in self.iter_py_files():
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\supervisors\statreload.py", line 51, in iter_py_files
+    for path in list(reload_dir.rglob("*.py")):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\pathlib.py", line 1045, in rglob
+    for p in selector.select_from(self):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\pathlib.py", line 493, in _select_from
+    for p in successor_select(starting_point, is_dir, exists, scandir):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\pathlib.py", line 440, in _select_from
+    with scandir(parent_path) as scandir_it:
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\20030497\\Desktop\\AGV RTLS\\AGV_RTLS_V3\\venv\\Lib\\site-packages\\~rllib3'
+[32m2025-09-03 14:01:29.467[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+Process SpawnProcess-2:
+Traceback (most recent call last):
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 69, in serve
+    await self._serve(sockets)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\server.py", line 76, in _serve
+    config.load()
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\uvicorn\importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "C:\Users\20030497\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\api\fastapi_app.py", line 20, in <module>
+    from src.analytics.performance_metrics import PerformanceMetrics
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\__init__.py", line 4, in <module>
+    from .heatmap_generator import HeatmapGenerator
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\src\analytics\heatmap_generator.py", line 10, in <module>
+    import datashader as ds
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\__init__.py", line 9, in <module>
+    from .core import Canvas                                 # noqa (API import)
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\datashader\core.py", line 10, in <module>
+    import dask.dataframe as dd
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dask\dataframe\__init__.py", line 25, in <module>
+    from dask.dataframe.dask_expr import (
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dask\dataframe\dask_expr\__init__.py", line 3, in <module>
+    from dask.dataframe.dask_expr import datasets
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dask\dataframe\dask_expr\datasets.py", line 10, in <module>
+    from dask.dataframe.dask_expr._collection import new_collection
+  File "C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\dask\dataframe\dask_expr\_collection.py", line 22, in <module>
+    from pyarrow import fs as pa_fs
+ImportError: cannot import name 'fs' from 'pyarrow' (C:\Users\20030497\Desktop\AGV RTLS\AGV_RTLS_V3\venv\lib\site-packages\pyarrow\__init__.py)
+INFO:     Will watch for changes in these directories: ['C:\\Users\\20030497\\Desktop\\AGV RTLS\\AGV_RTLS_V3']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [23084] using StatReload
+[32m2025-09-03 14:14:44.449[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+INFO:     Started server process [29276]
+INFO:     Waiting for application startup.
+[32m2025-09-03 14:14:55.457[0m | [1mINFO    [0m | [36msrc.api.fastapi_app[0m:[36mlifespan[0m:[36m73[0m - [1mStarting AGV RTLS API...[0m
+[32m2025-09-03 14:14:55.457[0m | [1mINFO    [0m | [36msrc.api.websocket_handler[0m:[36mbroadcast_loop[0m:[36m268[0m - [1mStarting WebSocket broadcast loop[0m
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src\dashboard\app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[32m2025-09-03 14:19:34.001[0m | [1mINFO    [0m | [36msrc.api.fastapi_app[0m:[36mlifespan[0m:[36m87[0m - [1mShutting down AGV RTLS API...[0m
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29276]
+[32m2025-09-03 14:19:36.544[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+INFO:     Started server process [16704]
+INFO:     Waiting for application startup.
+[32m2025-09-03 14:19:40.267[0m | [1mINFO    [0m | [36msrc.api.fastapi_app[0m:[36mlifespan[0m:[36m73[0m - [1mStarting AGV RTLS API...[0m
+[32m2025-09-03 14:19:40.267[0m | [1mINFO    [0m | [36msrc.api.websocket_handler[0m:[36mbroadcast_loop[0m:[36m268[0m - [1mStarting WebSocket broadcast loop[0m
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src\dashboard\pages\01_agv_tracker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[32m2025-09-03 14:20:06.927[0m | [1mINFO    [0m | [36msrc.api.fastapi_app[0m:[36mlifespan[0m:[36m87[0m - [1mShutting down AGV RTLS API...[0m
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16704]
+[32m2025-09-03 14:20:09.008[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+INFO:     Started server process [22208]
+INFO:     Waiting for application startup.
+[32m2025-09-03 14:20:12.251[0m | [1mINFO    [0m | [36msrc.api.fastapi_app[0m:[36mlifespan[0m:[36m73[0m - [1mStarting AGV RTLS API...[0m
+[32m2025-09-03 14:20:12.251[0m | [1mINFO    [0m | [36msrc.api.websocket_handler[0m:[36mbroadcast_loop[0m:[36m268[0m - [1mStarting WebSocket broadcast loop[0m
+INFO:     Application startup complete.
+INFO:     Will watch for changes in these directories: ['C:\\Users\\20030497\\Desktop\\AGV RTLS\\AGV_RTLS_V3']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [21584] using StatReload
+[32m2025-09-03 14:23:10.778[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+INFO:     Started server process [15864]
+INFO:     Waiting for application startup.
+[32m2025-09-03 14:23:23.907[0m | [1mINFO    [0m | [36msrc.api.fastapi_app[0m:[36mlifespan[0m:[36m73[0m - [1mStarting AGV RTLS API...[0m
+[32m2025-09-03 14:23:23.907[0m | [1mINFO    [0m | [36msrc.api.websocket_handler[0m:[36mbroadcast_loop[0m:[36m268[0m - [1mStarting WebSocket broadcast loop[0m
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src\dashboard\components\map_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[32m2025-09-03 14:33:04.104[0m | [1mINFO    [0m | [36msrc.api.fastapi_app[0m:[36mlifespan[0m:[36m87[0m - [1mShutting down AGV RTLS API...[0m
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15864]
+[32m2025-09-03 14:33:07.183[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+INFO:     Started server process [18756]
+INFO:     Waiting for application startup.
+[32m2025-09-03 14:33:10.996[0m | [1mINFO    [0m | [36msrc.api.fastapi_app[0m:[36mlifespan[0m:[36m73[0m - [1mStarting AGV RTLS API...[0m
+[32m2025-09-03 14:33:10.996[0m | [1mINFO    [0m | [36msrc.api.websocket_handler[0m:[36mbroadcast_loop[0m:[36m268[0m - [1mStarting WebSocket broadcast loop[0m
+INFO:     Application startup complete.
