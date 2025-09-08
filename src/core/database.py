@@ -3,7 +3,7 @@
 import os
 import time
 import asyncio
-from typing import Optional, Dict, Any, List
+from typing import Optional, Dict, Any, List, Generator
 from contextlib import contextmanager, asynccontextmanager
 from datetime import datetime, timedelta
 
@@ -137,7 +137,7 @@ class DatabaseManager:
                     raise
     
     @contextmanager
-    def get_session(self) -> Session:
+    def get_session(self) -> Generator[Session, None, None]:
         """Get SQLAlchemy session."""
         session = self.SessionLocal()
         try:
@@ -167,10 +167,12 @@ class DatabaseManager:
                     conn.commit()
                     logger.debug(f"Inserted batch {i//batch_size + 1}")
     
-    def query_dataframe(self, query: str, params: Dict = None) -> pd.DataFrame:
+    def query_dataframe(self, query, params= None) -> pd.DataFrame:
         """Execute query and return as pandas DataFrame."""
-        with self.engine.connect() as conn:
-            return pd.read_sql(text(query), conn, params=params)
+        if isinstance(params, list):
+            params = tuple(params)
+        with self.get_connection() as conn:
+            return pd.read_sql_query(sql=query, con=self.engine, params=params)
     
     async def insert_position(self, data: Dict) -> int:
         """Insert a single position record asynchronously."""

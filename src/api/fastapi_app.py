@@ -229,12 +229,15 @@ async def get_fleet_status(request: Request):
             p.battery_percent
         FROM agv_registry r
         LEFT JOIN (
-            SELECT DISTINCT ON (agv_id)
-                agv_id, plant_x, plant_y, speed_mps, zone_id, battery_percent
-            FROM agv_positions
-            WHERE ts >= NOW() - INTERVAL '1 minute'
-            ORDER BY agv_id, ts DESC
-        ) p ON r.agv_id = p.agv_id
+            SELECT p1.*
+            FROM agv_positions p1
+            JOIN (
+                SELECT agv_id, MAX(ts) as max_ts
+                FROM agv_positions
+                WHERE ts >= NOW() - INTERVAL 1 MINUTE
+                GROUP BY agv_id
+            ) lm ON lm.agv_id = p1.agv_id AND lm.max_ts = p1.ts
+        ) p ON r.agv_id = p.agv_id 
     """)
     
     return FleetStatusResponse(

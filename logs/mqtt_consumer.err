@@ -123,3 +123,569 @@ We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. 
 [32m2025-09-03 14:33:03.966[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
 [32m2025-09-03 14:33:03.967[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
 [32m2025-09-03 14:33:03.968[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-03 16:03:31.947[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-03 16:03:40.158[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-03 16:03:40.905[0m | [31m[1mERROR   [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m78[0m - [31m[1mFailed to load zones: 'assets\zones.geojson' not recognized as being in a supported file format.; It might help to specify the correct driver explicitly by prefixing the file path with '<DRIVER>:', e.g. 'CSV:path'.[0m
+[32m2025-09-03 16:03:40.909[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-03 16:03:40.916[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-03 16:03:40.917[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-03 16:04:40.932[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:05:40.948[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:06:40.955[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:07:40.966[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:08:40.978[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:09:34.506[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-03 16:09:34.506[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-03 16:09:34.506[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-03 16:09:34.507[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-03 16:09:44.935[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-03 16:09:52.416[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-03 16:09:52.965[0m | [31m[1mERROR   [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m78[0m - [31m[1mFailed to load zones: 'assets\zones.geojson' not recognized as being in a supported file format.; It might help to specify the correct driver explicitly by prefixing the file path with '<DRIVER>:', e.g. 'CSV:path'.[0m
+[32m2025-09-03 16:09:52.968[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-03 16:09:52.976[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-03 16:09:52.976[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-03 16:10:52.983[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:11:52.997[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:12:52.998[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:13:53.010[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:14:12.718[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-03 16:14:12.718[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-03 16:14:12.719[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-03 16:14:12.720[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-03 16:14:21.251[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-03 16:14:25.121[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-03 16:14:25.176[0m | [31m[1mERROR   [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m78[0m - [31m[1mFailed to load zones: 'assets\zones.geojson' not recognized as being in a supported file format.; It might help to specify the correct driver explicitly by prefixing the file path with '<DRIVER>:', e.g. 'CSV:path'.[0m
+[32m2025-09-03 16:14:25.178[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-03 16:14:25.204[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-03 16:14:25.205[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-03 16:15:25.217[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:16:25.221[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:17:25.232[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:18:25.238[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:19:25.242[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:20:25.250[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:21:25.257[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:22:25.262[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:23:25.265[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-03 16:24:18.440[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-03 16:24:18.440[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-03 16:24:18.441[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-03 16:24:18.441[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 07:56:54.792[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 07:57:03.661[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 07:57:04.407[0m | [31m[1mERROR   [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m78[0m - [31m[1mFailed to load zones: 'assets\zones.geojson' not recognized as being in a supported file format.; It might help to specify the correct driver explicitly by prefixing the file path with '<DRIVER>:', e.g. 'CSV:path'.[0m
+[32m2025-09-08 07:57:04.408[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 07:57:04.414[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 07:57:04.414[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 07:58:04.417[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 07:59:04.429[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:00:04.437[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:01:04.445[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:02:04.445[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:03:04.453[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:04:04.464[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:05:04.467[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:06:04.469[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:07:04.477[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:08:04.481[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:09:04.497[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:10:04.512[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:11:04.522[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:12:04.531[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:13:04.537[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:14:04.547[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:15:04.555[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:16:04.571[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:17:04.577[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:18:04.585[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:19:04.588[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:20:04.592[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:21:04.594[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:22:04.606[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:23:04.614[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:24:04.621[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:25:04.633[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:26:04.636[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:27:04.657[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:28:04.658[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:29:04.666[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:30:04.674[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:31:04.678[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:32:04.680[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:33:04.683[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:34:04.686[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:35:04.702[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:36:04.704[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:37:04.721[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:38:04.726[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:39:04.735[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:40:04.736[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:41:04.749[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:42:04.754[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:43:04.760[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:44:04.765[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:45:04.779[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:46:04.784[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:47:04.796[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:48:04.804[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:49:04.817[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:50:04.822[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:51:04.833[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:52:04.842[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:53:04.844[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:54:04.847[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:55:04.854[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:56:04.861[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:57:04.873[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:58:04.881[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 08:59:04.890[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:00:04.899[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:01:04.915[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:02:04.925[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:03:04.930[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:04:04.934[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:05:04.939[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:06:04.946[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:07:04.950[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:08:04.957[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:09:04.973[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:10:04.989[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:11:04.996[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:12:05.006[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:13:05.016[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:14:05.027[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:15:05.028[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:16:05.030[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:17:05.038[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:18:05.048[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:19:05.056[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:20:05.063[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:21:05.077[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:22:05.085[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:23:05.093[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:24:05.103[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:25:05.112[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:26:05.121[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:27:05.130[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:28:05.136[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:29:05.143[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:30:05.150[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:31:05.151[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:32:05.160[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:33:05.175[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:34:05.185[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:35:05.186[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:36:05.197[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:37:05.202[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:38:05.211[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:39:05.213[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:40:05.229[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:41:05.235[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:42:05.245[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:43:05.260[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:44:05.271[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:45:05.280[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:46:05.288[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:47:05.305[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:48:05.317[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:49:05.333[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:50:05.336[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:51:05.349[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:52:05.351[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:53:05.367[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:54:05.376[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:55:05.388[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:56:05.389[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:57:05.401[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:58:05.417[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 09:59:05.418[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:00:05.432[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:01:05.442[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:02:05.444[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:03:05.460[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:04:05.464[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:05:05.469[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:06:05.482[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:07:05.498[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:08:05.502[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:09:05.505[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:10:05.512[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:11:05.516[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:12:05.521[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:13:05.531[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:14:05.539[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:15:05.542[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:16:05.553[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:17:05.559[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:18:05.572[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:19:05.580[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:20:05.588[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:21:05.603[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:22:05.613[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:23:05.624[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:24:05.640[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:25:05.656[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:26:05.663[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:27:05.672[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:28:05.682[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:29:05.696[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:30:05.699[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:31:05.713[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:32:05.720[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:33:05.729[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:34:05.731[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:35:05.743[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:36:05.750[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:37:05.754[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:38:05.756[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:39:05.770[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:40:05.777[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:41:05.785[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:42:05.790[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:43:05.805[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:44:05.807[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:45:05.821[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:46:05.831[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:47:05.840[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:48:05.853[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:49:05.854[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:50:05.864[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:51:05.871[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:52:05.884[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:53:05.894[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:54:05.907[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:55:05.917[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:56:05.918[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:57:05.928[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:58:05.944[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 10:59:05.955[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:00:05.957[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:01:05.971[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:02:05.984[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:03:05.993[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:04:06.009[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:05:06.023[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:06:06.035[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:07:06.038[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:08:06.052[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:09:06.067[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:10:06.075[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:11:06.085[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:12:06.093[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:13:06.107[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:14:06.116[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:15:06.128[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:16:06.134[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:17:06.142[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:18:06.149[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:19:06.150[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:20:06.165[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:21:06.179[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:22:06.182[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:23:06.199[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:24:06.207[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:25:06.219[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:26:06.222[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:27:06.227[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:28:06.237[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:29:06.246[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:30:06.256[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:31:06.265[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:32:06.277[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:33:06.279[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:34:06.283[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:35:06.296[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:36:06.304[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:37:06.312[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:38:06.315[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:39:06.320[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:40:06.328[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:41:06.340[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:42:06.345[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:43:06.349[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:44:06.351[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:45:06.356[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:46:06.363[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:47:06.366[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:48:06.381[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:49:06.395[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:50:06.409[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:51:06.411[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:52:06.427[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:53:06.434[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:54:06.438[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:55:06.447[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:56:06.463[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:57:06.472[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:58:06.484[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 11:59:06.496[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:00:06.510[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:01:06.525[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:02:06.533[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:03:06.539[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:04:06.545[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:05:06.559[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:06:06.568[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:07:06.578[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:08:06.590[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:09:06.604[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:10:06.609[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:11:06.609[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:12:06.623[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:13:06.628[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:14:06.639[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:15:06.643[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:16:06.658[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:17:06.674[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:18:06.676[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:19:06.684[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:20:06.689[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:21:06.693[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:22:06.701[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:23:06.707[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:24:06.720[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:25:06.730[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:26:06.738[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:27:06.743[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:28:06.754[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:29:06.763[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:30:06.771[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:31:06.783[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:32:06.789[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:33:06.799[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:34:06.813[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:34:26.424[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 12:34:26.426[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 12:34:26.436[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 12:34:26.440[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 12:34:45.763[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 12:34:54.594[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 12:34:56.303[0m | [1mINFO    [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m75[0m - [1mLoaded 0 zones[0m
+[32m2025-09-08 12:34:56.303[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 12:34:56.316[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 12:34:56.316[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 12:35:56.321[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:36:56.337[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:37:56.342[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:38:56.355[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:39:56.363[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:40:56.376[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:41:56.378[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:42:56.388[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:43:56.402[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:44:56.410[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:45:56.418[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:46:56.427[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:47:56.436[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:48:56.444[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:49:56.455[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:50:56.463[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:51:56.474[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:52:56.483[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:53:56.487[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:54:56.502[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:55:56.511[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:56:56.556[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:57:56.563[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:58:56.572[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 12:59:56.587[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:00:56.593[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:01:56.603[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:02:56.611[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:03:56.619[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:04:56.634[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:05:56.637[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:06:56.644[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:07:56.655[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:08:56.664[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:09:56.673[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:10:56.685[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:11:56.692[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:12:56.703[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:13:56.718[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:14:56.733[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:15:56.735[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:16:56.751[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:17:56.754[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:18:56.765[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:19:56.777[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:20:56.783[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:21:56.786[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:22:56.802[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:23:56.811[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:24:56.816[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:25:56.819[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:26:56.828[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:27:56.833[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:28:56.844[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:29:56.853[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:30:37.371[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 13:30:37.380[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 13:30:37.394[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 13:30:37.400[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 13:30:57.373[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 13:31:08.878[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 13:31:12.443[0m | [1mINFO    [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m75[0m - [1mLoaded 1 zones[0m
+[32m2025-09-08 13:31:12.443[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 13:31:12.477[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 13:31:12.479[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 13:32:12.514[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:33:12.595[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:34:12.605[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:35:12.612[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:36:12.624[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:37:12.639[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:38:12.642[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:39:12.651[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:40:12.660[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:41:12.672[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:42:12.676[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:43:07.607[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 13:43:07.609[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 13:43:07.615[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 13:43:07.619[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 13:43:23.999[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 13:43:36.142[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 13:43:37.550[0m | [1mINFO    [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m75[0m - [1mLoaded 1 zones[0m
+[32m2025-09-08 13:43:37.551[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 13:43:37.565[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 13:43:37.565[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 13:44:37.577[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:45:37.588[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:46:37.599[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:47:37.603[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:48:37.612[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:49:37.622[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 13:49:49.255[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 13:49:49.256[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 13:49:49.258[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 13:49:49.259[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 14:06:11.373[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 14:06:27.398[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 14:06:29.238[0m | [1mINFO    [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m75[0m - [1mLoaded 1 zones[0m
+[32m2025-09-08 14:06:29.238[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 14:06:29.266[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 14:06:29.268[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 14:07:29.279[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:08:29.346[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:09:29.379[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:10:29.415[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:11:29.419[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:12:29.431[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:12:51.096[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 14:12:51.100[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 14:12:51.107[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 14:12:51.109[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 14:13:09.962[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 14:13:17.116[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 14:13:17.898[0m | [1mINFO    [0m | [36msrc.core.transforms[0m:[36m_load_zones[0m:[36m75[0m - [1mLoaded 1 zones[0m
+[32m2025-09-08 14:13:17.900[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 14:13:17.909[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 14:13:17.909[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 14:14:17.921[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:15:17.928[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:16:17.936[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:17:17.938[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:17:52.776[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 14:17:52.776[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 14:17:52.777[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 14:17:52.779[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 14:52:53.384[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 14:53:08.385[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 14:53:08.392[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 14:53:08.411[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 14:53:08.411[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 14:54:08.421[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:55:08.433[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:56:08.440[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:57:08.448[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:58:08.468[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:59:08.490[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 14:59:56.612[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 14:59:56.617[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 14:59:56.645[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 14:59:56.651[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 15:00:11.364[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 15:00:22.896[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 15:00:22.902[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 15:00:22.985[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 15:00:22.986[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 15:01:23.007[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:02:23.011[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:03:23.017[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:04:23.022[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:05:23.030[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:06:23.046[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:07:23.051[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:08:23.056[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:09:23.064[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:10:23.082[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:11:23.095[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:12:23.113[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:13:23.125[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:14:23.135[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:15:23.153[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:16:23.172[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:17:23.189[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:18:23.202[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:19:23.204[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:20:23.213[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:21:23.223[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:22:23.226[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:23:23.244[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:24:23.256[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:25:23.266[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:26:22.348[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 15:26:22.355[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 15:26:22.366[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 15:26:22.371[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 15:26:40.567[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 15:26:53.515[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 15:26:53.524[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 15:26:53.551[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 15:26:53.551[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 15:27:53.567[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:28:53.575[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:29:53.594[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:30:53.609[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:31:53.616[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:32:53.642[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:32:56.398[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 15:32:56.403[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 15:32:56.412[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 15:32:56.419[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 15:35:18.050[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 15:35:27.723[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 15:35:27.728[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 15:35:27.739[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 15:35:27.739[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 15:36:27.742[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:37:27.759[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:38:27.840[0m | [1mINFO    [0m | [36m__main__[0m:[36m_log_statistics[0m:[36m290[0m - [1mConsumer Stats - Received: 0, Processed: 0, Failed: 0, Rate: 0.00 msg/s[0m
+[32m2025-09-08 15:38:43.550[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 15:38:43.560[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 15:38:43.576[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 15:38:43.583[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m
+We renamed asyncio-mqtt to aiomqtt and released a version 1.0.0 in the process. This is the last release under the asyncio-mqtt name. You can find the new repository at https://github.com/sbtinstruments/aiomqtt
+[32m2025-09-08 15:39:50.331[0m | [1mINFO    [0m | [36msrc.core.database[0m:[36m_init_checks[0m:[36m95[0m - [1mConnected to MySQL 8.0.43[0m
+[32m2025-09-08 15:40:02.225[0m | [33m[1mWARNING [0m | [36msrc.core.transforms[0m:[36m_load_affine[0m:[36m65[0m - [33m[1mNo affine matrix found, using identity transform[0m
+[32m2025-09-08 15:40:02.231[0m | [1mINFO    [0m | [36m__main__[0m:[36mstart[0m:[36m227[0m - [1mStarting MQTT consumer...[0m
+[32m2025-09-08 15:40:02.251[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m79[0m - [1mConnected to MQTT broker at localhost[0m
+[32m2025-09-08 15:40:02.253[0m | [1mINFO    [0m | [36m__main__[0m:[36mon_connect[0m:[36m81[0m - [1mSubscribed to topic: rtls/+/position[0m
+[32m2025-09-08 15:40:48.683[0m | [1mINFO    [0m | [36m__main__[0m:[36m_signal_handler[0m:[36m72[0m - [1mReceived signal 2, shutting down...[0m
+[32m2025-09-08 15:40:48.684[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m300[0m - [1mStopping MQTT consumer...[0m
+[32m2025-09-08 15:40:48.685[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mon_disconnect[0m:[36m87[0m - [33m[1mDisconnected from broker, return code: 0[0m
+[32m2025-09-08 15:40:48.686[0m | [1mINFO    [0m | [36m__main__[0m:[36mstop[0m:[36m312[0m - [1mMQTT consumer stopped[0m

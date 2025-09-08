@@ -601,11 +601,11 @@ class AGVDashboard:
                 message,
                 created_at
             FROM system_events
-            WHERE created_at BETWEEN :start AND :end
+            WHERE created_at BETWEEN %s AND %s
             AND event_type = 'ANOMALY_DETECTED'
             ORDER BY created_at DESC
             LIMIT 100
-        """, {'start': filters['start'], 'end': filters['end']})
+        """, (filters['start'], filters['end']))
         
         if anomalies.empty:
             st.success("No anomalies detected in selected time range")

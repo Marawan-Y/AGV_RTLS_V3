@@ -1,0 +1,231 @@
+INFO:     127.0.0.1:1264 - "GET /struts2-showcase/struts/utils.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1265 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1263 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1266 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1267 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1285 - "GET /js/?${jndi:dns://MDEDiscovery181eea8a78SeenInTheWildGet-8000} HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1311 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1309 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1308 - "GET /struts2-showcase/struts/tooltip.gif HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1312 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1310 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1316 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1315 - "GET /struts2-showcase/struts/domtt.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1317 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1314 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1313 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1322 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1321 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1320 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1318 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1319 - "GET /struts2-showcase/struts/domTT.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1327 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1326 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1324 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1325 - "GET /struts2-showcase/struts/inputtransfersselect.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1323 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1330 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1332 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1329 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1331 - "GET /struts2-showcase/struts/optiontransferselect.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1328 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1338 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1337 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1340 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1336 - "GET /struts2-showcase HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1339 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1333 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1334 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1335 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1343 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1345 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1342 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1344 - "GET /index.action/struts/utils.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1341 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1350 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1347 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1349 - "POST /struts2-showcase/token/transfer4.action HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1348 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1346 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1353 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1352 - "GET /struts2-showcase/%24%7Bjndi%3Adns%3A//MDEDiscovery181eea8a78ApacheStruts2-8000%7D HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1355 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1354 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1351 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1358 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1359 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1357 - "POST /struts2-showcase/token/transfer4.action HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1356 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1360 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1363 - "POST /analytics/telemetry/ph/api/hyper/send?_c=${jndi:dns://MDEDiscovery181eea8a78VMwarevCenter-8000}&i=test HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1361 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1362 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1365 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1364 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1369 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1370 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1368 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1367 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1374 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1373 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1372 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1371 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1378 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1375 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1376 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1377 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1382 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1384 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1379 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1380 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1383 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1381 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1385 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1388 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1389 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1390 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1386 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1394 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1391 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1392 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1393 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1397 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1398 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1396 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1395 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1400 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1399 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1402 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1401 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1406 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1405 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1404 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1403 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1410 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1409 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1408 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1407 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1414 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1413 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1411 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1412 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1415 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1417 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1418 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1416 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1422 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1421 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1420 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1419 - "GET / HTTP/1.1" 200 OK
+INFO:     ${jndi:dns://MDEDiscovery181eea8a78X-Forwarded-For-8000}:0 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1427 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1424 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1428 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1429 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1423 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     ${jndi:dns://MDEDiscovery181eea8a78X-Forwarded-For-8000}:0 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1430 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1432 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1433 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1431 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1436 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1435 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1437 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1434 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1440 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1439 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1441 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1438 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1444 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1443 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1445 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1442 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1448 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1449 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1447 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1446 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1453 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1452 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1451 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1450 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1457 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1455 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1456 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1454 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1458 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1460 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1462 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1461 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1459 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1466 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1465 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1464 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1463 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1470 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1469 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1468 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1467 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1474 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1471 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1473 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1472 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1475 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1478 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1477 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1476 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1481 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1480 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1479 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1482 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1487 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1486 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1488 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1485 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1489 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1492 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1491 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1490 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1493 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1494 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1499 - "GET /api/v2/%24%7Bjndi%3Adns%3A//MDEDiscovery181eea8a78SeenInTheWildGet-8000%7D HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1500 - "GET /api/?${jndi:dns://MDEDiscovery181eea8a78SeenInTheWildGet-8000} HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1501 - "GET /index.html?${jndi:dns://MDEDiscovery181eea8a78SeenInTheWildGet-8000} HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1502 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1503 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1504 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1505 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:1506 - "POST /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1507 - "POST /login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1508 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1509 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1510 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1511 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1512 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1513 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1514 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1515 - "GET /cgi-bin/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1516 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1518 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1519 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1520 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1521 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1522 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1523 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1524 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1525 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1526 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1527 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1536 - "GET /%3Aundefined HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1539 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1540 - "GET /cgi-bin/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1541 - "GET /JSPWiki/wiki/%24%7Bjndi%3Adns%3A//MDEDiscovery181eea8a78ApacheJspWiki-8000%7D HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1542 - "GET /webtools/control/main HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1543 - "POST /broker/xml HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1544 - "POST /broker/xml HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1545 - "GET /portal/info.jsp HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:1549 - "GET /?x=${jndi:dns://MDEDiscovery181eea8a78xParam-8000} HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1550 - "POST /?v=${jndi:dns://MDEDiscovery181eea8a78vPostParam-8000} HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:1551 - "POST /?param=${jndi:dns://MDEDiscovery181eea8a78ParamUriParam-8000} HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:1552 - "GET /?v=${jndi:dns://MDEDiscovery181eea8a78vGetParam-8000} HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1553 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:1554 - "GET / HTTP/1.1" 200 OK

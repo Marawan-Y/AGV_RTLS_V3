@@ -8,6 +8,7 @@ from typing import Dict, List, Tuple, Optional
 from datetime import datetime, timedelta
 import networkx as nx
 from collections import defaultdict
+import json
 
 from loguru import logger
 from src.core.database import db_manager

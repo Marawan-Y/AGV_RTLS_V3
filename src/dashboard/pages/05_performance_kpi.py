@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
-
+from uuid import uuid4
 from src.core.database import db_manager
 from src.analytics.performance_metrics import PerformanceMetrics
 from src.dashboard.components.filters import FilterComponents
@@ -219,53 +219,44 @@ def render_efficiency_kpis(start_time, end_time, show_comparison):
     
     col1, col2, col3, col4 = st.columns(4)
     
-    # Calculate efficiency metrics
+    # MySQL-safe + defensive COALESCE/NULLIF to avoid None/NaN and division by zero
     efficiency_data = db_manager.query_dataframe("""
         SELECT 
-            SUM(moving_time_sec) / (SUM(moving_time_sec) + SUM(idle_time_sec)) * 100 as motion_efficiency,
-            SUM(total_distance_m) / 1000 as total_distance_km,
-            AVG(avg_speed_mps) as avg_speed,
-            SUM(idle_time_sec) / 3600 as total_idle_hours
+            COALESCE(
+                (SUM(moving_time_sec) / NULLIF(SUM(moving_time_sec) + SUM(idle_time_sec), 0)) * 100,
+                0
+            ) AS motion_efficiency,
+            COALESCE(SUM(total_distance_m) / 1000, 0) AS total_distance_km,
+            COALESCE(AVG(avg_speed_mps), 0) AS avg_speed,
+            COALESCE(SUM(idle_time_sec) / 3600, 0) AS total_idle_hours
         FROM agv_analytics_hourly
         WHERE hour_start BETWEEN %s AND %s
     """, (start_time, end_time))
     
-    if not efficiency_data.empty:
-        with col1:
-            st.metric(
-                "Motion Efficiency",
-                f"{efficiency_data['motion_efficiency'].iloc[0]:.1f}%",
-                delta=None
-            )
-        
-        with col2:
-            st.metric(
-                "Total Distance",
-                f"{efficiency_data['total_distance_km'].iloc[0]:.1f} km",
-                delta=None
-            )
-        
-        with col3:
-            st.metric(
-                "Average Speed",
-                f"{efficiency_data['avg_speed'].iloc[0]:.2f} m/s",
-                delta=None
-            )
-        
-        with col4:
-            st.metric(
-                "Idle Time",
-                f"{efficiency_data['total_idle_hours'].iloc[0]:.1f} hours",
-                delta=None,
-                delta_color="inverse"
-            )
+    # Defaults in case of empty DF
+    motion_eff = float(efficiency_data['motion_efficiency'].iloc[0]) if not efficiency_data.empty else 0.0
+    total_dist = float(efficiency_data['total_distance_km'].iloc[0]) if not efficiency_data.empty else 0.0
+    avg_speed = float(efficiency_data['avg_speed'].iloc[0]) if not efficiency_data.empty else 0.0
+    idle_hours = float(efficiency_data['total_idle_hours'].iloc[0]) if not efficiency_data.empty else 0.0
+
+    with col1:
+        st.metric("Motion Efficiency", f"{motion_eff:.1f}%", delta=None)
+    with col2:
+        st.metric("Total Distance", f"{total_dist:.1f} km", delta=None)
+    with col3:
+        st.metric("Average Speed", f"{avg_speed:.2f} m/s", delta=None)
+    with col4:
+        st.metric("Idle Time", f"{idle_hours:.1f} hours", delta=None, delta_color="inverse")
     
     # Efficiency by AGV type
     type_efficiency = db_manager.query_dataframe("""
         SELECT 
             r.type,
-            COUNT(DISTINCT a.agv_id) as active_agvs,
-            SUM(a.moving_time_sec) / (SUM(a.moving_time_sec) + SUM(a.idle_time_sec)) * 100 as efficiency
+            COUNT(DISTINCT a.agv_id) AS active_agvs,
+            COALESCE(
+                (SUM(a.moving_time_sec) / NULLIF(SUM(a.moving_time_sec) + SUM(a.idle_time_sec), 0)) * 100,
+                0
+            ) AS efficiency
         FROM agv_registry r
         LEFT JOIN agv_analytics_hourly a ON r.agv_id = a.agv_id
             AND a.hour_start BETWEEN %s AND %s
@@ -292,47 +283,46 @@ def render_productivity_kpis(start_time, end_time, show_comparison):
     
     col1, col2, col3, col4 = st.columns(4)
     
-    # Calculate productivity metrics
+    # Calculate productivity metrics (NULL-safe with COALESCE)
     productivity_data = db_manager.query_dataframe("""
         SELECT 
-            COUNT(*) as total_tasks,
-            SUM(CASE WHEN status = 'COMPLETED' THEN 1 ELSE 0 END) as completed_tasks,
-            AVG(CASE WHEN status = 'COMPLETED' THEN actual_duration_sec / 60 END) as avg_completion_time,
-            SUM(CASE WHEN status = 'COMPLETED' THEN distance_m END) / 1000 as task_distance_km
+            COUNT(*) AS total_tasks,
+            COALESCE(SUM(CASE WHEN status = 'COMPLETED' THEN 1 ELSE 0 END), 0) AS completed_tasks,
+            COALESCE(AVG(CASE WHEN status = 'COMPLETED' THEN actual_duration_sec / 60 END), 0) AS avg_completion_time,
+            COALESCE(SUM(CASE WHEN status = 'COMPLETED' THEN distance_m END) / 1000, 0) AS task_distance_km
         FROM agv_tasks
         WHERE created_at BETWEEN %s AND %s
     """, (start_time, end_time))
     
-    if not productivity_data.empty:
-        with col1:
-            st.metric(
-                "Total Tasks",
-                f"{productivity_data['total_tasks'].iloc[0]:,}",
-                delta=None
-            )
-        
-        with col2:
-            completion_rate = (productivity_data['completed_tasks'].iloc[0] / 
-                             productivity_data['total_tasks'].iloc[0] * 100) if productivity_data['total_tasks'].iloc[0] > 0 else 0
-            st.metric(
-                "Completion Rate",
-                f"{completion_rate:.1f}%",
-                delta=None
-            )
-        
-        with col3:
-            st.metric(
-                "Avg Completion Time",
-                f"{productivity_data['avg_completion_time'].iloc[0]:.1f} min",
-                delta=None
-            )
-        
-        with col4:
-            st.metric(
-                "Task Distance",
-                f"{productivity_data['task_distance_km'].iloc[0]:.1f} km",
-                delta=None
-            )
+    # Python-side safety: cast & coalesce
+    if productivity_data is not None and not productivity_data.empty:
+        cols = ["total_tasks", "completed_tasks", "avg_completion_time", "task_distance_km"]
+        productivity_data[cols] = (
+            productivity_data[cols]
+            .apply(pd.to_numeric, errors="coerce")
+            .fillna(0)
+        )
+        total_tasks      = int(productivity_data.at[0, "total_tasks"])
+        completed_tasks  = int(productivity_data.at[0, "completed_tasks"])
+        avg_completion   = float(productivity_data.at[0, "avg_completion_time"])
+        task_distance_km = float(productivity_data.at[0, "task_distance_km"])
+    else:
+        total_tasks = completed_tasks = 0
+        avg_completion = 0.0
+        task_distance_km = 0.0
+
+    with col1:
+        st.metric("Total Tasks", f"{total_tasks:,}", delta=None)
+    
+    with col2:
+        completion_rate = (completed_tasks / total_tasks * 100.0) if total_tasks > 0 else 0.0
+        st.metric("Completion Rate", f"{completion_rate:.1f}%", delta=None)
+    
+    with col3:
+        st.metric("Avg Completion Time", f"{avg_completion:.1f} min", delta=None)
+    
+    with col4:
+        st.metric("Task Distance", f"{task_distance_km:.1f} km", delta=None)
     
     # Tasks by priority
     priority_tasks = db_manager.query_dataframe("""
@@ -341,9 +331,9 @@ def render_productivity_kpis(start_time, end_time, show_comparison):
                 WHEN priority >= 8 THEN 'High'
                 WHEN priority >= 4 THEN 'Medium'
                 ELSE 'Low'
-            END as priority_level,
-            COUNT(*) as count,
-            AVG(CASE WHEN status = 'COMPLETED' THEN actual_duration_sec / 60 END) as avg_time
+            END AS priority_level,
+            COUNT(*) AS count,
+            AVG(CASE WHEN status = 'COMPLETED' THEN actual_duration_sec / 60 END) AS avg_time
         FROM agv_tasks
         WHERE created_at BETWEEN %s AND %s
         GROUP BY priority_level
@@ -382,44 +372,29 @@ def render_quality_kpis(start_time, end_time, show_comparison):
     # Calculate quality metrics
     quality_data = db_manager.query_dataframe("""
         SELECT 
-            AVG(quality) * 100 as signal_quality,
-            COUNT(CASE WHEN quality < 0.5 THEN 1 END) as low_quality_count,
-            COUNT(*) as total_samples
+            COALESCE(AVG(quality) * 100, 0) AS signal_quality,
+            COUNT(CASE WHEN quality < 0.5 THEN 1 END) AS low_quality_count,
+            COUNT(*) AS total_samples
         FROM agv_positions
         WHERE ts BETWEEN %s AND %s
     """, (start_time, end_time))
     
-    if not quality_data.empty:
-        with col1:
-            st.metric(
-                "Signal Quality",
-                f"{quality_data['signal_quality'].iloc[0]:.1f}%",
-                delta=None
-            )
-        
-        with col2:
-            error_rate = (quality_data['low_quality_count'].iloc[0] / 
-                         quality_data['total_samples'].iloc[0] * 100) if quality_data['total_samples'].iloc[0] > 0 else 0
-            st.metric(
-                "Error Rate",
-                f"{error_rate:.2f}%",
-                delta=None,
-                delta_color="inverse"
-            )
-        
-        with col3:
-            st.metric(
-                "Low Quality Samples",
-                f"{quality_data['low_quality_count'].iloc[0]:,}",
-                delta=None
-            )
-        
-        with col4:
-            st.metric(
-                "Total Samples",
-                f"{quality_data['total_samples'].iloc[0]:,}",
-                delta=None
-            )
+    signal_quality = float(quality_data['signal_quality'].iloc[0]) if not quality_data.empty else 0.0
+    low_quality_count = int(quality_data['low_quality_count'].iloc[0]) if not quality_data.empty else 0
+    total_samples = int(quality_data['total_samples'].iloc[0]) if not quality_data.empty else 0
+    error_rate = (low_quality_count / total_samples * 100.0) if total_samples > 0 else 0.0
+    
+    with col1:
+        st.metric("Signal Quality", f"{signal_quality:.1f}%", delta=None)
+    
+    with col2:
+        st.metric("Error Rate", f"{error_rate:.2f}%", delta=None, delta_color="inverse")
+    
+    with col3:
+        st.metric("Low Quality Samples", f"{low_quality_count:,}", delta=None)
+    
+    with col4:
+        st.metric("Total Samples", f"{total_samples:,}", delta=None)
 
 
 def render_safety_kpis(start_time, end_time, show_comparison):
@@ -432,56 +407,37 @@ def render_safety_kpis(start_time, end_time, show_comparison):
     # Calculate safety metrics
     safety_data = db_manager.query_dataframe("""
         SELECT 
-            COUNT(CASE WHEN event_type = 'COLLISION_RISK' THEN 1 END) as collision_risks,
-            COUNT(CASE WHEN event_type = 'ZONE_VIOLATION' THEN 1 END) as zone_violations,
-            COUNT(CASE WHEN event_type = 'SPEED_VIOLATION' THEN 1 END) as speed_violations,
-            COUNT(CASE WHEN severity = 'CRITICAL' THEN 1 END) as critical_events
+            COUNT(CASE WHEN event_type = 'COLLISION_RISK' THEN 1 END) AS collision_risks,
+            COUNT(CASE WHEN event_type = 'ZONE_VIOLATION' THEN 1 END) AS zone_violations,
+            COUNT(CASE WHEN event_type = 'SPEED_VIOLATION' THEN 1 END) AS speed_violations,
+            COUNT(CASE WHEN severity = 'CRITICAL' THEN 1 END) AS critical_events
         FROM system_events
         WHERE created_at BETWEEN %s AND %s
     """, (start_time, end_time))
     
-    if not safety_data.empty:
-        with col1:
-            st.metric(
-                "Collision Risks",
-                f"{safety_data['collision_risks'].iloc[0]}",
-                delta=None,
-                delta_color="inverse"
-            )
-        
-        with col2:
-            st.metric(
-                "Zone Violations",
-                f"{safety_data['zone_violations'].iloc[0]}",
-                delta=None,
-                delta_color="inverse"
-            )
-        
-        with col3:
-            st.metric(
-                "Speed Violations",
-                f"{safety_data['speed_violations'].iloc[0]}",
-                delta=None,
-                delta_color="inverse"
-            )
-        
-        with col4:
-            st.metric(
-                "Critical Events",
-                f"{safety_data['critical_events'].iloc[0]}",
-                delta=None,
-                delta_color="inverse"
-            )
+    collision_risks = int(safety_data['collision_risks'].iloc[0]) if not safety_data.empty else 0
+    zone_violations = int(safety_data['zone_violations'].iloc[0]) if not safety_data.empty else 0
+    speed_violations = int(safety_data['speed_violations'].iloc[0]) if not safety_data.empty else 0
+    critical_events = int(safety_data['critical_events'].iloc[0]) if not safety_data.empty else 0
+    
+    with col1:
+        st.metric("Collision Risks", f"{collision_risks}", delta=None, delta_color="inverse")
+    with col2:
+        st.metric("Zone Violations", f"{zone_violations}", delta=None, delta_color="inverse")
+    with col3:
+        st.metric("Speed Violations", f"{speed_violations}", delta=None, delta_color="inverse")
+    with col4:
+        st.metric("Critical Events", f"{critical_events}", delta=None, delta_color="inverse")
     
     # Safety trend
     safety_trend = db_manager.query_dataframe("""
         SELECT 
-            DATE(created_at) as date,
-            COUNT(*) as event_count,
+            DATE(created_at) AS date,
+            COUNT(*) AS event_count,
             event_type
         FROM system_events
         WHERE created_at BETWEEN %s AND %s
-        AND event_type IN ('COLLISION_RISK', 'ZONE_VIOLATION', 'SPEED_VIOLATION')
+          AND event_type IN ('COLLISION_RISK', 'ZONE_VIOLATION', 'SPEED_VIOLATION')
         GROUP BY DATE(created_at), event_type
         ORDER BY date
     """, (start_time, end_time))

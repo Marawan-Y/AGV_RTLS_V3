@@ -175,20 +175,24 @@ def render_page():
         # Fleet status breakdown
         st.subheader("Current Fleet Status")
         
+        # MySQL-safe latest battery per AGV (no DISTINCT ON, unquoted INTERVAL)
         fleet_status = db_manager.query_dataframe("""
             SELECT 
-                status,
-                COUNT(*) as count,
-                AVG(battery_percent) as avg_battery
+                r.status,
+                COUNT(*) AS count,
+                AVG(COALESCE(p.battery_percent, 100)) AS avg_battery
             FROM agv_registry r
             LEFT JOIN (
-                SELECT DISTINCT ON (agv_id)
-                    agv_id, battery_percent
-                FROM agv_positions
-                WHERE ts >= NOW() - INTERVAL '5 minute'
-                ORDER BY agv_id, ts DESC
+                SELECT p1.agv_id, p1.battery_percent
+                FROM agv_positions p1
+                JOIN (
+                    SELECT agv_id, MAX(ts) AS max_ts
+                    FROM agv_positions
+                    WHERE ts >= NOW() - INTERVAL 5 MINUTE
+                    GROUP BY agv_id
+                ) last ON last.agv_id = p1.agv_id AND last.max_ts = p1.ts
             ) p ON r.agv_id = p.agv_id
-            GROUP BY status
+            GROUP BY r.status
         """)
         
         if not fleet_status.empty:
@@ -212,7 +216,7 @@ def render_page():
                 st.plotly_chart(fig, use_container_width=True)
             
             with col2:
-                # Battery distribution
+                # Battery distribution (latest per-AGV; no DISTINCT ON)
                 battery_dist = db_manager.query_dataframe("""
                     SELECT 
                         CASE 
@@ -220,14 +224,17 @@ def render_page():
                             WHEN battery_percent >= 50 THEN 'Medium (50-80%)'
                             WHEN battery_percent >= 20 THEN 'Low (20-50%)'
                             ELSE 'Critical (<20%)'
-                        END as battery_level,
-                        COUNT(*) as count
+                        END AS battery_level,
+                        COUNT(*) AS count
                     FROM (
-                        SELECT DISTINCT ON (agv_id)
-                            agv_id, battery_percent
-                        FROM agv_positions
-                        WHERE ts >= NOW() - INTERVAL '5 minute'
-                        ORDER BY agv_id, ts DESC
+                        SELECT p1.agv_id, COALESCE(p1.battery_percent, 100) AS battery_percent
+                        FROM agv_positions p1
+                        JOIN (
+                            SELECT agv_id, MAX(ts) AS max_ts
+                            FROM agv_positions
+                            WHERE ts >= NOW() - INTERVAL 5 MINUTE
+                            GROUP BY agv_id
+                        ) last ON last.agv_id = p1.agv_id AND last.max_ts = p1.ts
                     ) p
                     GROUP BY battery_level
                     ORDER BY 
@@ -474,7 +481,7 @@ def render_page():
                 r.total_distance_km,
                 r.maintenance_due_date,
                 r.status,
-                DATEDIFF(r.maintenance_due_date, NOW()) as days_until_maintenance
+                DATEDIFF(r.maintenance_due_date, NOW()) AS days_until_maintenance
             FROM agv_registry r
             WHERE r.maintenance_due_date IS NOT NULL
             ORDER BY days_until_maintenance
@@ -513,9 +520,9 @@ def render_page():
         runtime_dist = db_manager.query_dataframe("""
             SELECT 
                 type,
-                AVG(total_runtime_hours) as avg_runtime,
-                MAX(total_runtime_hours) as max_runtime,
-                AVG(total_distance_km) as avg_distance
+                AVG(total_runtime_hours) AS avg_runtime,
+                MAX(total_runtime_hours) AS max_runtime,
+                AVG(total_distance_km) AS avg_distance
             FROM agv_registry
             GROUP BY type
         """)
